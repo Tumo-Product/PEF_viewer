@@ -1,0 +1,53 @@
+.current {
+    top: 54px;
+    cursor: pointer;
+}
+
+.top {
+    top: -59px;
+}
+
+.bottom {
+    top: 167px;
+}
+
+.closed .current {
+    top: -44px !important
+}
+
+.closed .top {
+    top: -147.3px !important;
+}
+
+.closed .bottom {
+    top: 59.3px !important;
+}
+
+.offscreenTop {
+    top: -154.5px;
+}
+
+.offscreenBottom {
+    top: 261.5px;
+}
+
+.outsideShadow {
+    box-shadow: 5px 5px 5px 0 rgb(222 222 230 / 50%), -3px -3px 5px 0 #fefefe !important;
+}
+
+.outsideShadow .inside {
+    opacity: 0;
+}
+
+.outsideShadow p {
+    color: #9AB7DB !important;
+}
+
+.closed {
+    top: 138.5px !important;
+    height: 0px !important;
+}
+
+.goUnder {
+    margin-bottom: -40px !important;
+}

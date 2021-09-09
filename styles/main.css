@@ -1,0 +1,294 @@
+@font-face{
+    font-family: Fedra;
+    src: url('../fonts/FedraSansAltPro/FedraSansAltPro-Medium.otf');
+}
+
+@font-face{
+    font-family: FedraBook;
+    src: url('../fonts/FedraSansAltPro/FedraSansAltPro-Book.otf');
+}
+
+@font-face{
+    font-family: FedraDemi;
+    src: url('../fonts/FedraSansAltPro/FedraSansAltPro-Demi.otf');
+}
+
+@font-face{
+    font-family: FedraDemiItalic;
+    src: url('../fonts/FedraSansAltPro/FedraSansAltPro-DemiItalic.otf');
+}
+
+@font-face{
+    font-family: FedraBold;
+    src: url('../fonts/FedraSansAltPro/FedraSansAltPro-Bold.otf');
+}
+
+body {
+    background: #F3F3F3;
+    width: 900px;
+    height: 550px;
+    overflow: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-variant: lining-nums;
+}
+
+.offscreen {
+    margin-top: -200px !important;
+}
+
+.roundRect {
+    height: 151px;
+    width: 125px;
+    border-radius: 21px;
+    background-color: #F3F3F3;
+    box-shadow: -3px -3px 5px 0 #FEFEFE, 5px 5px 5px 0 rgba(222,222,230,0.5);
+    position: relative;
+    margin-left: 54px;
+    margin-top: 37.5px;
+    display: flex;
+    justify-content: center;
+}
+
+.roundRect p {
+    color: #5C7CA6;
+}
+
+.container {
+    height: 75px;
+    width: 75px;
+    background-color: #F3F3F3;
+    box-shadow: -3px -3px 5px 0 #FEFEFE, 5px 5px 5px 0 rgba(222,222,230,0.5);
+    border-radius: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 113px;
+    left: 26px;
+}
+
+.container img {
+    width: 45px;
+}
+
+.value {
+    position: absolute;
+    margin-top: 45px;
+    font-family: FedraBold;
+    font-size: 50px;
+    text-align: center;
+    font-variant: lining-nums;
+}
+
+.type {
+    position: absolute;
+    margin-top: 100px;
+    font-family: FedraBook;
+    font-size: 40px;
+
+    width: 100%;
+    text-align: center;
+}
+
+#finalValues {
+    margin-top: 10px !important;
+    position: unset;
+}
+
+.rects {
+    display: flex;
+    transition: 1s;
+    height: 190px;
+    width:  500px;
+    margin-top: 31px;
+    position: absolute;
+    left: 210px;
+}
+
+.rects .roundRect:first-of-type {
+    margin-left: 0;
+}
+
+.question p {
+    font-family: Fedra;
+    font-size: 20px;
+    color: #436980;
+    line-height: 29px;
+    width: 560px;
+    text-align: center;
+}
+
+.question {
+    position: absolute;
+    top: 223px;
+    left: 171px;
+    transition: 1s;
+}
+
+.info {
+    transition: 1s;
+    opacity: 0;
+    position: absolute;
+    overflow: auto;
+
+    height: 229px;
+    width: 743px;
+    color: #5C7CA6;
+    font-family: FedraBook;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 19px;
+    text-align: center;
+    
+    left: 80px;
+    top: 350px;
+}
+
+.title {
+    transition: 1s;
+    opacity: 0;
+    position: absolute;
+
+    height: 78px;
+    width: 743px;
+    color: #DB9191;
+    font-family: FedraDemiItalic;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 20px;
+    text-align: center;
+    left: 80px;
+    top: 254px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#play {
+    transition: 1s;
+	background: #F3F3F3;
+	width: 37px;
+	height: 37px;
+	box-shadow: 2px -1px 2px 0 #FEFEFE, -1px 2px 2px 0 rgba(0,0,0,0.16);
+	border-radius: 100%;
+    cursor: pointer;
+
+	position: fixed;
+    bottom: 0;
+    margin-bottom: 70px;
+	left: 431px;
+}
+
+.icon {
+    position: absolute;
+    width: 17px;
+    height: 14px;
+    top: 12px;
+    left: 12px;
+}
+
+#play svg {
+    transition: 0.5s;
+    width: 100%;
+    height: 100%;
+}
+
+#play path {
+    transition: 0.3s;
+}
+
+.hoverable:hover svg {
+	opacity: 0.5;
+}
+
+.circle {
+    box-shadow: -1px 1px 1px 0 rgba(254,254,254,0.48);
+    height: 31.08px;
+    width: 31.08px;
+    border-radius: 100%;
+
+    position: absolute;
+    top: 3px;
+    left: 3px;
+}
+
+#outcomeText {
+    height: 156px;
+    width: 600px;
+    color: #98B2D4;
+    font-family: FedraDemi;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 24px;
+    text-align: center;
+    position: absolute;
+    left: 22px;
+    bottom: 10px;
+    overflow: auto;
+}
+
+.elements, .elementsOverlay {
+    transition: 1s;
+    width: 456px;
+    height: 195px;
+    border-radius: 19px;
+    position: absolute;
+    top: 41px;
+    left: 224px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+
+    font-family: FedraBold;
+    color: #5C7CA6;
+}
+
+.elementsOverlay {
+    box-shadow: inset -2px -2px 5px 0 #FFFFFF, inset 2px 3px 3px 1px rgba(222,222,230,0.72);
+    pointer-events: none;
+}
+
+.bar {
+    margin-left: 41px;
+    transition: 1s;
+    height: 88px;
+    width: 375px;
+    border-radius: 19px;
+    background-color: #F3F3F3;
+    box-shadow: inset -3px -3px 5px 0 #FEFEFE, inset 3px 3px 5px 0 rgba(222,222,230,0.5);
+    padding-top: 5px;
+    color: rgba(222,222,230,0.5);
+
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.elements p {
+    max-width: 350px;
+    text-align: center;
+    z-index: 0;
+    font-family: FedraBold;
+    font-size: 35px;
+}
+
+.inside {
+    transition: 0.15s;
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    height: 80px;
+    width: 367px;
+    border-radius: 16px;
+    background-color: #F3F3F3;
+    box-shadow: inset -3px -3px 5px 0 #FEFEFE, inset 3px 3px 5px 0 rgba(222,222,230,0.5);
+}
