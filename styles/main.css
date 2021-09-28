@@ -114,7 +114,7 @@ body {
     margin-left: 0;
 }
 
-.question p {
+#question p {
     font-family: Fedra;
     font-size: 20px;
     color: #436980;
@@ -123,11 +123,11 @@ body {
     text-align: center;
 }
 
-.question {
+#question {
     position: absolute;
     top: 223px;
     left: 171px;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .info {

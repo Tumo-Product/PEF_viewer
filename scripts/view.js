@@ -48,13 +48,11 @@ const view = {
         scrolling = false;
     },
     onPlay: async () => {
+        $("#question").css("opacity", 0);
+        await timeout (500);
         $("#play").addClass("goUnder");
-        $(".question").css("opacity", 0);
         $(".info").css("opacity", 1);
         $(".title").css("opacity", 1);
-
-        await timeout (1000);
-        $(".question").hide("opacity", 0);
 
         let classes = [".elements", ".elementsOverlay"];
         for (let i = 0; i < classes.length; i++) {
